@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+	<style>
+		#elem1, #elem2, #elem3, #elem4, {
+			color: white;
+			font-size: 3rem;
+			text-align: center;
+		}
+		#elem1 {
+			background: springgreen;
+			width: 60px;
+			height: 100px;
+		}
+		#elem2 {
+			background: gold;
+			width: 100px;
+			height: 60px
+		}
+		#elem3 {
+			background: crimson;
+			width: 100px;
+			height: 100px;
+		}
+		#elem4 {
+			background: steelblue;
+			width: 150px;
+			height: 100px;
+		}
+		#container {
+			background: gainsboro;
+			display: flex;
+			margin-bottom: 50px;
+			flex-direction: column;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<a href="border.html"><img id="right" src="https://image.flaticon.com/icons/png/512/61/61752.png" alt=""></a>
+		<h1>свойста display</h1>
+		<a href="margin.html"><img id="left" src="https://image.flaticon.com/icons/png/512/61/61752.png" alt=""></a>
+	</header>
+	<main>
+		<h2>значение none</h2>
+		<div style="border: 2px solid black">
+			Невидимый div (
+			<div style="display: none">dfhfhfdfdffgffg</div>
+			)
+		</div>
+		<h2>значение block</h2>
+		<ul>
+			<li>блочные элементы распологаються один над другим вертикально(если нет особых свойств позицирования</li>
+			<li>блок стремиться расшириться на всю доступную ширину. можно указать ширину и высоту самостоятельно.</li>
+			<li>это значение исплей многие элементы имеют по умолчанию div, h1-h6, p.</li>
+		</ul>
+		<div style="border: 3px solid yellow; width: 50%">первый</div>
+		<div style="border: 3px solid blue; width: 50%">второй</div>
+		<h2>значение iline</h2>
+		<ul>
+			<li>элементы распологаются на той же строке последавательно</li>
+			<li>ширина и высота элемента определяется по содержимому.поменять их нельзя</li>
+			<li></li>
+		</ul>
+		<span style="border: 5px solid green">
+			<div style="display:inline; border: 3px solid blue;
+			width: 50%">Ширина</div>
+			<div style="display:inline; border: 3px solid red;">игнорируется</div>
+		</span>
+		<h2>значение inline-block</h2>
+		<h3>как инлайн элемент:<h3>
+			<ul>
+				<li>распологаеся в строке</li>
+				<li> размер устонавливается по содержимому</li>
+			</ul>
+			<h3>как блочный элемент</h3>
+			<ul>
+				<li>элемент всегда прямоугольный</li>
+				<li>работает свойства width/height</li>
+			</ul>
+
+			<h2>значение flex</h2>
+			<div id="container">
+				<div id="elem1">1</div>
+				<div id="elem2">2</div>
+				<div id="elem3">3</div>
+				<div id="elem4">4</div>
+			</div>
+
+			<h3>flex-direction</h3>
+		</main>
+</html>

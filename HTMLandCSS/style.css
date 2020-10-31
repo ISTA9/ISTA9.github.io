@@ -1,0 +1,45 @@
+table {
+	/*граница(обводка)*/
+	border: 2px LawnGreen solid;
+	border-collapse: collapse;
+}
+td {
+	border: 1px solid greenYellow;
+	background: Fuchsia;
+	text-align: center;
+}
+th{
+	border: 1px solid Crimson;
+	background: Gold;
+	color: DarkCyan;
+}
+
+header{
+	width: 80%;
+	background: greenYellow;
+	height: 70px;
+	margin: auto;
+	text-align: center;
+	display: flex;
+	justify-content: space-around;
+	align-items: middle;
+}
+
+body {
+	background: White;
+	margin: 0; 
+}
+
+#left {
+	transform: rotate(180deg);
+	width: 64px;
+}
+
+#right {
+	width: 64px;
+}
+
+main {
+	width: 80%;
+	margin: auto;
+}

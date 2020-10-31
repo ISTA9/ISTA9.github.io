@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>единицы измерения в HTML и CSS</title>
+	<link rel="stylesheet" href="style.css">
+	<style>
+		ol{
+			font-size: 2rem;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<a href="border.html"><img id="right" src="https://image.flaticon.com/icons/png/512/61/61752.png" alt=""></a>
+		<h1>единицы измерения в HTML и CSS</h1>
+		<a href="margin.html"><img id="left" src="https://image.flaticon.com/icons/png/512/61/61752.png" alt=""></a>
+	</header>
+	<main>
+		<img id="p1" src="https://media.discordapp.net/attachments/756086066922127405/764413323281825802/unknown.png" alt="">
+	</main>
+	<main>
+		<h2>Исключения в которых % берётся не от родителя</h2>
+		<ol style="font-size: 1em;">
+			<li>
+				<b>margin-left</b>
+				<p>процент берётся от ширины родительского блока а не от его margin-left</p>
+			</li>
+			<li>
+				<b>line-height (высота строки)</b>
+				<p>Процент берётся от текущего размера шрифта а не от line-height родителя</p>
+			</li>
+			<li>
+				<b>width/height</b>
+				<p>при position: fixed.процент берётся от ширины высоты окна а не от ширину высоту родителя</p>
+			</li>
+		</ol>
+		<h2>единица измерения шрифта em</h2>
+		<div style="font-size: 10px">
+			текущий размер шрифта
+			<div style="font-size: 1.6em">
+				первый текст - размер шрифта =
+				текущий шрифт *1.6еm =10px*1.6 =
+				16px
+				<div style="font-size: 2em">
+					второй текст - размер шрифта =
+					32px
+					
+				</div>
+			</div>
+		</div>
+		<h2>едиица измерения rem: смесь px и em</h2>
+		<ol>
+			<li>ученье
+				<ol>
+					<li> - свет
+						<ol>
+							<li> а неученье
+								<ol>
+									<li> - тьма</li>
+								</ol>
+							</li>
+						</ol>
+					</li>
+				</ol>
+			</li>
+		</ol>
+		<h1>итого:</h1>
+		<ul>
+			<li><b></b> - абсолютные пиксели, используются для максимально точного задания размера</li>
+			<li><b>%</b> -  задаёт размер относительно такого же свойства родителя кроме исключений</li>
+			<li><b>em</b> - задаёт размер шрифта относительна размера шрифта родителя</li>
+			<li><b>rem</b> - задаёт размер шрифта относительна размера тега html </li>
+			<li><b>vw, vh, vmin, vmax</b> - относительна размера экрана</li>
+		</ul>
+	</main>
+</body>
+</html>
