@@ -30,12 +30,12 @@ body {
 	margin: 0; 
 }
 
-#left {
+#right {
 	transform: rotate(180deg);
 	width: 64px;
 }
 
-#right {
+#left {
 	width: 64px;
 }
 
