@@ -3,8 +3,54 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Первая страница</title>
+	<title>position</title>
 	<link rel="stylesheet" href="style.css">
+	<style>
+		#container {
+			width: 80%;
+			margin: auto;
+		}
+		#header, #footer {
+			width: 100%;
+			background-color: indigo;
+			color: white;
+		}
+		#content {
+			width: 100%;
+			background-color: sandybrown;
+		}
+		#div1 {
+			margin: 0 25px;
+			height: 30px;
+			background-color: Gold;
+			position: static;
+		}
+		#div2 {
+			margin: 0 25px;
+			height: 35px;
+			background-color: Fuchsia;
+			position: relative;
+			left: 100px;
+			right: 20px;
+		}
+		#div3 {
+			margin: 0 25px;
+			height: 20px;
+			background-color: Maroon;
+			position: absolute;
+			left: 300px;
+		}
+		#div4 {
+			margin: 0 25px;
+			height: 25px;
+			background-color: Lime;
+		}
+		#div5 {
+			margin: 0 25px;
+			height: 40px;
+			background-color: Aqua;
+		}
+	</style>
 </head>
 <body>
 	<header>
@@ -12,4 +58,37 @@
 		<h1>единицы измерения в HTML и CSS</h1>
 		<a href="margin.html"><img id="left" src="https://image.flaticon.com/icons/png/512/61/61752.png" alt=""></a>
 	</header>
-	</body>
+	<main>
+		<div id="container">
+			<div id="header">id="header"</div>
+			<div id="content">
+				<div id="div1">id="div1"</div>
+				<div id="div2">id="div2"</div>
+				<div id="div3">id="div3"</div>
+				<div id="div4">id="div4"</div>
+				<div id="div5">id="div5"</div>
+			</div>
+			<div id="footer">id="footer"</div>
+		</div>
+
+		<h1>итого:</h1>
+		<h2>static</h2>
+		<p>иначе называется "без пазицинирования</p>
+		<h2>realitive</h2>
+		<h3>сдвигает элемент относительно текущего места</h3>
+		<ul>
+			<li>противоположные границыleft/right(top/bottom)одновременно указать нельзя</li>
+			<li>окружающие элементы ведут себя так будто элемент никуда не сдвигался</li>
+		</ul>
+		<h2>absolute</h2>
+		<p>визуально переносит элемент на новое место<br> НОВОЕ место вычесляется по координатам left/top/right/bottom относительно ближайшего позициорования родителя если такого родителя нет то им считается окно</p>
+		<ul>
+			<li>ширина элемента по умолчанию устонавливается по содержимому</li>
+			<li> можно указать одновременно противоположные границы left/right(top/botom) элемент при этом растянется</li>
+			<li>окружающие элементы заполняют освободившееся место</li>
+		</ul>
+		<h2>fixed</h2>
+		<p>подводит обсолютную позиционирования при коором элемент привязывается к координатам окна а не документа</p>
+	</main>
+</body>
+</html>
