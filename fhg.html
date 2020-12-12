@@ -5,20 +5,54 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
 	<style>
+		body {
+			margin: 0;
+		}
+
 		#blue {
-			width: 100000px;
-			height: 400px;
+			width: 100px;
+			height: 30px;
 			border: 2px solid red;
 			background-color: blue;
-			margin: auto;
+			margin: left;
+			transition: 1s;
 		}
 		#blue:hover {
 			background-color: green;
-			height: 1000px;
+			height: 100vh;
+			transition: 1s;
+		}
+		#red {
+			width: 100px;
+			height: 30px;
+			border: 2px solid red;
+			background-color: blue;
+			margin: right;
+			transition: 1s;
+		}
+		#red:hover {
+			background-color: red;
+			height: 100vh;
+			transition: 1s;
+		}
+		#green {
+			width: 100px;
+			height: 30px;
+			border: 2px solid green;
+			background-color: yellow;
+			margin: right;
+			transition: 1s;
+		}
+		#green:hover {
+			background-color: green;
+			height: 100vh;
+			transition: 1s;
 		}
 	</style>
 </head>
 <body>
 	<div id="blue"></div>
+	<div id="red"></div>
+	<div id="green"></div>
 </body>
 </html>
