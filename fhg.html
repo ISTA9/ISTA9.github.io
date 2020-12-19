@@ -3,56 +3,52 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>ДЗ</title>
 	<style>
-		body {
-			margin: 0;
+		@media all and (max-width: 1920px) and (min-width: 1201px) {
+			.big {display: none;}
+			.middle {display: block;}
+			.w {display: block;}
+			.g {display: block;}
+			.e {display: block;}
 		}
 
-		#blue {
-			width: 100px;
-			height: 30px;
-			border: 2px solid red;
-			background-color: blue;
-			margin: left;
-			transition: 1s;
+		@media all and (max-width: 1200px) and (min-width: 769px) {
+			.big {display: block;}
+			.middle {display: none;}
+			.w {display: block;}
+			.g {display: block;}
+			.e {display: block;}
 		}
-		#blue:hover {
-			background-color: green;
-			height: 100vh;
-			transition: 1s;
+
+		@media all and (max-width: 320px) and (min-width: 1px) {
+			.g {display: none;}
+			.middle {display: block;}
+			.big {display: block;}
+			.w {display: block;}
+			.e {display: block;}
 		}
-		#red {
-			width: 100px;
-			height: 30px;
-			border: 2px solid red;
-			background-color: blue;
-			margin: right;
-			transition: 1s;
+
+		@media all and (max-width: 768px) and (min-width: 321px) {
+			.g {display: block;}
+			.middle {display: block;}
+			.big {display: block;}
+			.w {display: none;}
+			.e {display: block;}
 		}
-		#red:hover {
-			background-color: red;
-			height: 100vh;
-			transition: 1s;
-		}
-		#green {
-			width: 100px;
-			height: 30px;
-			border: 2px solid green;
-			background-color: yellow;
-			margin: right;
-			transition: 1s;
-		}
-		#green:hover {
-			background-color: green;
-			height: 100vh;
-			transition: 1s;
-		}
+		@media all and (max-width: 2000px) and (min-width: 1921px) {
+			.g {display: block;}
+			.middle {display: block;}
+			.big {display: block;}
+			.w {display: block;}
+			.e {display: none;}
 	</style>
 </head>
 <body>
-	<div id="blue"></div>
-	<div id="red"></div>
-	<div id="green"></div>
+	<div class="e">ширина вашего экрана от 1921px до 2000px</div>
+	<div class="w">ширина вашего экрана от 321px до 768px</div>
+	<div class="g">ширина вашего экрана от 1px до 320px</div>
+	<div class="middle">ширина вашего экрана от 769px до 1200px</div>
+	<div class="big">ширина вашего экрана от 1201px до1920px</div>
 </body>
 </html>
